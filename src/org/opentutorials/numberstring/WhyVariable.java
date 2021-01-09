@@ -18,13 +18,14 @@ public class WhyVariable {
 		byte g = 100;
 		short h = 200;
 		
-		float i = 200.1F;
-		int j = (int)200.1;		
+		float i = 200.1F; int j = (int)200.1;		
 		System.out.println(i);
 		System.out.println(j);
 
-		
-		
+		int k = 65; char l = (char)k;
+		System.out.println(l);
+		System.out.println(k);
+
 		
 	}
 
