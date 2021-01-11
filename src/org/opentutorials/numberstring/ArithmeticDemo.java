@@ -36,7 +36,14 @@ public class ArithmeticDemo {
 		z = x;
 		System.out.println("z=" + z);
 		
+		int a = 4-3*6;
+		System.out.println(a);
 		
-	}
+		System.out.println("Hello" == "Hello");
+		System.out.println("Hello" .equals("Hello"));
+		String c = "Hello world"; String d = new String("Hello world");
+		System.out.println(c == d);
+		System.out.println(c .equals(d));
 
+	}
 }
