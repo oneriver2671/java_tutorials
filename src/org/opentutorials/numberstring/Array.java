@@ -1,39 +1,54 @@
 package org.opentutorials.numberstring;
 
 public class Array {
-	public static void numbering(int init, int limit) {
-		for(int i = init; i <= limit; i++) {
-			System.out.println(i);
+	public static String numbers(int x, int y) {
+		String output = "";
+		for(int i = x; i <= y; i++) {
+			output += i;
 		}
+		return output;
+		}
+	
+	public static String[] getMembers() {
+		String[] members = {"ÀåÇÑ°­", "¼ÕÈï¹Î", "±è´ö¹è"};
+		return members;
 	}
+	
+	
 	public static void main(String[] args) {
-		String classGroup[] = {"¾Æ°Ô·Î", "¼ÕÈï¹Î", "ÀÌ°íÀ×", "¸Þ½Ã"};
-		System.out.println(classGroup[1]);
+		String result = numbers(3, 7);
+		System.out.println(result);
 		
-		String[] member = {"ÀåÇÑ°­", "¼ÕÈï¹Î", "±è´ö¹è"};
-			for(int i = 0; i < member.length; i++) {
-				System.out.println(member[i] + "´ÔÀÌ »ó´ãÀ» ¹Þ¾Ò½À´Ï´Ù.");
-			}
+		String[] members = getMembers();
+		
 			
-			
-			for (String e : member) {
-				System.out.println(e + "´ÔÀÌ »ó´ãÀ» ¹Þ¾Ò½À´Ï´Ù.");
-			}
-			
-			
-		int[] scores = {67, 92, 84, 45, 75, 94, 64, 84, 81, 53};
-			System.out.println(scores.length);
-			
-			int sum = 0;
-			for(int x=0; x<10; x++) {
-				sum += scores[x];
-			}
-			int avg = sum/10;
-			System.out.println(avg);
-			
-			
-			numbering(2, 5);
-			
+		int[] grade = new int[10];
+		grade[0] = 94;
+		grade[1] = 47;
+		grade[2] = 87;
+		grade[3] = 78;
+		grade[4] = 91;
+		grade[5] = 30;
+		grade[6] = 45;
+		grade[7] = 52;
+		grade[8] = 60;
+		grade[9] = 71;
+		
+		int sum = 0;
+		for(int i=0; i<8; i++) {
+			sum += grade[i];
+		}
+		System.out.println(sum);
+		
+		
+		for(int e : grade) {
+			System.out.println(e + "Á¡ÀÔ´Ï´Ù.");
+		}
+		
+		System.out.println(args.length);
+		
+		
+		
 			
 	}
 
