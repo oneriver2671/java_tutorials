@@ -15,41 +15,58 @@ public class Array {
 	}
 	
 	
+	public static void sum(int left, int right, int middle) {
+		System.out.println(left + right + middle);
+	}
+	
+	
 	public static void main(String[] args) {
 		String result = numbers(3, 7);
 		System.out.println(result);
 		
 		String[] members = getMembers();
 		
-			
-		int[] grade = new int[10];
-		grade[0] = 94;
-		grade[1] = 47;
-		grade[2] = 87;
-		grade[3] = 78;
-		grade[4] = 91;
-		grade[5] = 30;
-		grade[6] = 45;
-		grade[7] = 52;
-		grade[8] = 60;
-		grade[9] = 71;
+		sum(30, 40, 50);
+		sum(10, 20, 90);
+		
+		
+		
+		
+		
+		int[] grade = {72, 45, 81, 93, 91, 87, 75, 66, 48, 52};
+		
+		for(int i : grade) {
+			if(i == 75) {
+				break;
+			}
+			System.out.println(i + "점입니다.");
+		}
+		
+		for(int i = 2; i <= 9; i++) {
+			System.out.println("****" + i + "단입니다.****");
+			for(int j = 1; j <= 9; j++) {
+				System.out.println(i + "x" + j + " = " + i*j);
+			}
+		}
 		
 		int sum = 0;
-		for(int i=0; i<8; i++) {
-			sum += grade[i];
-		}
+		for(int i = 1; i <= 100; i++) {
+			sum += i;
+		}		
+		System.out.println("1부터 100까지의 합");
 		System.out.println(sum);
 		
 		
-		for(int e : grade) {
-			System.out.println(e + "점입니다.");
+		int sum1 = 0;
+		int i = 1;
+		while(i <= 100) {
+			sum1 += i;
+			i++;
 		}
+		System.out.println(sum1);
+	
+	
 		
-		System.out.println(args.length);
-		
-		
-		
-			
 	}
 
 	
