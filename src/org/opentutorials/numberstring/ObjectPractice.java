@@ -1,41 +1,40 @@
 package org.opentutorials.numberstring;
 
-//class C1{
-//	static int static_variable = 1;
-//	int instance_variable = 2;
-//	static void static_static() {    // 클래스 메소드가 클래스 변수를 호출할 때.
-//		System.out.println(static_variable);
-//	
-//	}
-//	
-//}
-//
-//class Calculator{
-//	static double PI = 3.14;    
-//	int Left, Right;   
-//	
-//	public void setOprands(int left, int right) {
-//		int Left;
-//		int Right;
-//		int PI;
-//	}
-//}
+class C1{
+	static int static_variable = 1;
+	int instance_variable = 2;
+	static void static_static() {    // 클래스 메소드가 클래스 변수를 호출할 때.
+		System.out.println(static_variable);
+	}	
+}
 
-//public class ObjectPractice {
-//		static int i = 0;
-//		public static void a() {
-//			int i = 0;
-//			double PI;
-//	}
-//	
-//	public static void main(String[] args) {
-//		for(i = 0; i < 5; i++) {
-//			a();
-//			System.out.println(i);
-//			System.out.println(PI);
-//		} 
-//	}
-//}
+class Calculator{
+	static double PI = 3.14;    
+	int Left, Right;   
+	
+	public void setOprands(int left, int right) {
+		Left = left;
+		Right = right;
+	}
+}
+public class ObjectPractice {
+		static int i = 0;
+		public static void a() {
+			int i = 0;
+			double PI;
+	}
+	public static void main(String[] args) {
+		Calculator c1 = new Calculator();
+		System.out.println(c1.Left + c1.Right + Calculator.PI);
+		for(i = 0; i < 5; i++) {
+			a();
+			System.out.println(i);
+			System.out.println(Calculator.PI);
+			System.out.println(c1.Left + c1.Right + Calculator.PI);
+		} 
+	}
+}
+
 //class C{
 //	int v = 10;
 //	public void m() {
@@ -43,8 +42,8 @@ package org.opentutorials.numberstring;
 //		System.out.println(v);
 //	}
 //}
-//
-//public class ObjectPractice{
+ 
+//public class ObjectPractice {
 //
 //	public static void main(String[] args) {
 //		C c1 = new C();
@@ -52,7 +51,9 @@ package org.opentutorials.numberstring;
 //	}
 //}
 
-//         			**** 오버로딩 공부 ****
+//       **** 오버로딩 공부 ****
+
+/*
 class Calculator{
 	int left, right;
 	int third = 10;
@@ -96,6 +97,7 @@ public class ObjectPractice {
 		c1.avg();
 	}
 }
+*/
 	
 
 

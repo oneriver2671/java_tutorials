@@ -48,7 +48,5 @@ public class DmbCellPhone {
 		dmbCellPhone.turnOnDmb();
 		dmbCellPhone.changeChannelDmb(23);
 		dmbCellPhone.turnOffDmb();
-		
-		
 	}
 }

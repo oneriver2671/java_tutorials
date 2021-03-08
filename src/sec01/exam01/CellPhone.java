@@ -3,7 +3,7 @@ package sec01.exam01;
 
 
 public class CellPhone {
-	org.opentutorials.practice.Test_01 c = new org.opentutorials.practice.Test_01();
+	org.opentutorials.practice.ComputerExample12 c = new org.opentutorials.practice.ComputerExample12();
 	String a = "±èÀÚ¹Ù";
 	int b = 3;
 	
