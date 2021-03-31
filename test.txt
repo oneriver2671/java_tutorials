@@ -19,8 +19,10 @@ public class CharIOExam02 {
 				// 파일에 한 줄만 들어갈 게 아니니 반복문 활용.
 				String line = null;	// 파일의 끝에 null값이 리턴되게.
 				while((line = br.readLine()) != null) {
-					pw.println(line);
+					pw.println(line);        // 이건 무슨 의미인지 모르겠다. 근데 이거 지우니까
+					System.out.println(line);	// 이걸 쓰니까 txt파일 내용이 출력됨.
 				}
+				
 			
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -33,5 +35,4 @@ public class CharIOExam02 {
 				}
 			}
 	}
-
 }

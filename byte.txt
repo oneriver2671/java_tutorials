@@ -22,6 +22,7 @@ public class ByteIOExam01 {
 				// 읽어들일 코드가 여러줄 일 수 있으니, 반복문으로.
 				// 읽어들인 값이 -1이 아닐 때에만, 반복해서 수행하라는 뜻.
 				fos.write(readData);
+				System.out.println(readData);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -38,7 +39,8 @@ public class ByteIOExam01 {
 			}
 		}
 		// 수행시간 비교.
-		long endTime = System.currentTimeMillis();
-		System.out.println(endTime-startTime);
+//		long endTime = System.currentTimeMillis();
+//		System.out.println(endTime-startTime);
+		
 	}
 }

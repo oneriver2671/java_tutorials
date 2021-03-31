@@ -30,5 +30,8 @@ public class StringExam2 {
 		System.out.println(str6);
 		
 		
+		
+		
+		
 	}
 }
